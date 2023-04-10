@@ -1,17 +1,33 @@
 # 1) write a function that displays the string "Hello World!" on the console
-
+print ('hello world')
 # 2) write a function that takes a string as a parameter and displays it on the console
-
+def take_string (string):
+    cadena = string
+    return cadena
+print (take_string('alguna cadena'))
 # 3) write a function that takes a name (type string) as parameter and returns the following string
 #    "Hi there, <name>!". hint: google f"{}" in python
-
+def greating (name):
+    return f"Hi there, {name}!"
 # 4) write a function that takes a full name as a parameter and displays it on the console
 #    the same name 3 times: first time in uppercase, second time in lowercase and third time only initial letters
 #    with capital letters. Example: input: "gregorio canepa". output: GREGORIO CANEPA, gregorio canepa, Gregorio Canepa
+def string_functions(fullname):
 
+    return (fullname.upper(), fullname.lower(), fullname.capitalize())
+    
+print (string_functions('osvaldo casabella'))
 # 5) write a function that takes two parameter: first parameter: a random sentence, second parameter: a single word.
 #    The function should return true if the word in the second parameter exists in the sentence from the first parameter.
 #    Example: "I drink mate all the time." "coffee". Output: False
+def comparation(sentence, word):
+    if word in sentence: 
+        return True
+    else:
+        return False
+
+
+print(comparation('hola mundo', 'hola'))
 
 
 # 6) Write a Python program to check whether a string starts with specified characters. 
