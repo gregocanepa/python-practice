@@ -105,4 +105,4 @@ for char in original_string:
         expected_output += char_dot
     else:
         expected_output += char
-print (expected_output)
+print(expected_output)
